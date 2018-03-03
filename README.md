@@ -1,2 +1,3 @@
 # pio
-Analysis of game theoretic poker solutions from PIO
+
+Basic data wrangling functions to bulky csv outputs.

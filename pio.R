@@ -2,7 +2,7 @@ require(dplyr)
 
 getwd()
 
-files <- file.info(list.files("C:/Users/livin/OneDrive/Documents/Free19/Reports"))
+files <- file.info(list.files(" "))
 tail(files, 2)
 
 filenames <- rownames(files)
@@ -11,7 +11,7 @@ latest <- filenames[length(filenames)]
 latest
 
 
-dir1 <- paste("~/Free19/Reports/", latest, "/report.csv", sep="")
+dir1 <- paste("", latest, "/report.csv", sep="")
 
 # turn comes, OOP p1 to act
 
@@ -45,7 +45,7 @@ d1
 # join multiple aggregration reports by turn card, to find line for each player
 # p1 acted, p2 responds to given action
 
-report2 <- read.csv("~/Free19/Reports/AggregatedReport_2017-06-22_10-19-14/report.csv", skip=3)
+report2 <- read.csv("/report.csv", skip=3)
 
 d2 <- tbl_df(report2)
 
